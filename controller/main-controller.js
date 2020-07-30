@@ -1,4 +1,4 @@
-const api = require('../servies/callFx')
+const api = require('../services/callFx')
 
 const mainControl = (req, res) => {   
     return res.send({

@@ -1,6 +1,6 @@
 const ex = require('express')
 const router = ex.Router()
-const api = require('../servies/callFx')
+const api = require('../services/callFx')
 
 router.get('/:id', (req, res) => {
     res.send({
