@@ -1,5 +1,4 @@
 const ex = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 
@@ -9,7 +8,7 @@ const route = require('./router/api-router')
 const mainController = require('./controller/main-controller')
 
 app.use(cors())
-app.use(bodyParser.json())
+app.use(ex.json())
 app.use(morgan('combined'))
 
 // middleware
